@@ -4,23 +4,33 @@ import React, { useEffect, useState } from 'react'
 
 const ScrollToTop = () => {
     const [showbuttom,setShowButtom]=useState(false)
+    const isBrowser = () => typeof window !== 'undefined'; 
     
-    const checkScroll= () => {
-        if(  window.scrollY > window.innerHeight){
+    useEffect(()=>{
+const checkScroll= () => {
+      if (isBrowser()) {
+        if (window.scrollY > window.innerHeight) {
             setShowButtom(true);
-        }else if (window.scrollY <= window.innerHeight){
+        } else if (window.scrollY <= window.innerHeight) {
             setShowButtom(false)
         }
     }
-    useEffect(()=>{
-   window.addEventListener("scroll",checkScroll);
-   
-   return ()=> window.removeEventListener("scroll",checkScroll);
-    },[showbuttom, window.scrollY])
+    }
 
+      if(isBrowser()){
+        window.addEventListener("scroll",checkScroll);
+        return ()=> window.removeEventListener("scroll",checkScroll);
+      }
+   
+   
+   
+    },[showbuttom])
+
+   
     const scrolltoTopFunction=()=>{
-      
-      window.scrollTo({top:0,behavior:"smooth"})
+      if (!isBrowser()) return;
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    
     }
 
   return (
