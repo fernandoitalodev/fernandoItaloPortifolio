@@ -1,0 +1,82 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+.App{
+  
+    background-color: #1b1b1b;
+    color:white;
+
+    .h1{
+        font-size:3.5em;
+        text-align: center;
+     }
+     .h2{
+        font-size:1.5em;
+        text-align: left;
+        margin-left: 0.5em;
+     }.next-page-link{
+      
+      border-radius:10px;
+      padding:0.5em;
+      
+     
+       
+       &:hover{
+         border:1px solid aqua;
+         color:aqua;
+       }
+     }.showButtom{
+      display:block;
+
+     }.toTopBtn{
+      position:fixed;
+      bottom:15px;
+      right:15px;
+      
+     }.hideButtom{
+      display:none;
+     }.arrowToTop{
+      font-size:2em;
+     }
+}
+
+@media(max-width:720px){
+   .App{
+      .h1{
+         font-size:2em;
+         font-weight: 600;
+         
+      }
+   }
+}
+@media(min-width:2500px){
+   .App{
+      
+      .h1{
+
+         font-size:4em;
+         font-weight: 600;
+         
+      } .header-links{
+         font-size:2em;
+      }.h2,h2{
+         font-size:3em;
+      }p,.next-page-link{
+         font-size:2em;
+      }.btn{
+         font-size: 1.5em;
+      }img{
+         height:500px;
+      }.stats-item{
+        
+         .h1{
+            font-weight:700;
+            font-size:4em;
+         }h2{
+            font-size:1.5em;
+         }
+      }
+   }
+}

@@ -1,0 +1,379 @@
+.about-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  padding: 1em;
+  width: 100%;
+  gap: 1em;
+
+  .about-home {
+    display: flex;
+    justify-content: space-between;
+    .biografia {
+      width: 350px;
+      h3 {
+        font-weight: 500;
+        margin-left: 0.5em;
+        margin-bottom: 1em;
+      }
+      p {
+        text-align: left;
+        font-weight: 400;
+        font-size: 1.2em;
+        text-indent: 30px;
+      }
+    }
+    .photo {
+      .photo-div {
+        border: 2px solid white;
+        padding: 1em;
+        border-radius: 15px;
+        border-bottom: 10px solid white;
+        border-right: 10px solid white;
+        margin: 1em;
+        .photo-me {
+          border-radius: 15px;
+        }
+      }
+    }
+    .stats {
+      width: 300px;
+
+      display: flex;
+      flex-direction: column;
+      .stats-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .h1 {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .skills {
+    min-height: 100vh;
+    .h1 {
+      position: relative;
+    }
+    main {
+      display: flex;
+      .image-skills {
+        height: 100%;
+        width: auto;
+      }
+      .skills-div {
+        margin-top: 1.5em;
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        gap: 50px;
+        .habilidade {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .experiencia {
+    .h1{
+      margin-bottom:1em;
+    }
+     position: relative;
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     justify-content: space-between;
+   
+     padding:1em;
+    .experiencia-div {
+      display: flex;
+      align-items: center;
+    }
+    .yoda-baby {
+      max-height: 450px;
+      width: auto;
+      z-index: 0;
+      margin: 0.5em;
+    }
+  }
+  .cursos {
+    .h1{
+      margin-bottom:1.5em;
+    }
+    .cursos-div {
+      display: flex;
+      align-items: center;
+      .robot-img {
+        height: 400px;
+        width: auto;
+      }
+    }
+  }
+  .Information {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .WorkOrCourseDiv {
+      width: 600px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .img-information {
+        height: 120px;
+        width: 250px;
+       
+      }
+      .professionOrCourse {
+        font-weight: 550;
+      }
+      .placeOf {
+        color: #43a299;
+      }
+      .dateOf {
+        color: grey;
+      }
+      .textOf {
+        text-indent: 20px;
+        padding: 0.2em;
+      }
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .about-div {
+  
+    .h1 {
+      margin-top: 2em;
+    }
+    .about-home {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+
+      .biografia {
+        width: 95%;
+        
+        p {
+          font-weight: 400;
+          font-size: 1.2em;
+        }
+      }
+      .stats {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        gap:1em;
+        .stats-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content:center;
+          
+          .h1 {
+            font-weight: 700;
+          }
+          h2 {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+    .Information {
+     
+      width: 100%;
+       gap: 30px;
+       .h1{
+         margin-bottom:2em;
+         
+       }
+      
+      .WorkOrCourseDiv {
+         flex-direction: column;
+        width: 100%;
+        .img-information{
+        height: 90px;
+        width: 100px;
+      }
+        .textOf{
+         font-size:0.8em;
+        }.professionOrCourse {
+         font-weight: 550;
+         text-align:center;
+         font-size:1.5em;
+
+       }
+       .placeOf {
+         color: #43a299;
+         font-size: 0.8em;
+       }
+       .dateOf {
+         color: grey;
+         text-align:center;
+       }
+       
+      }
+    }
+    .cursos {
+      .h1{font-size:3em;}
+      .cursos-div {
+        position: relative;
+        z-index: 0;
+        
+        .robot-img {
+          height: 400px;
+          width: auto;
+          position: absolute;
+        }
+      }
+    }
+    .skills {
+       min-height: 90vh;
+      position:relative;
+      .h1 {
+        position: relative;
+        
+      }
+     
+      main{
+         min-height:100vh;
+         width:100%;
+         .image-skills {
+       
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        z-index:1;
+        opacity:0.2;
+        height: 100%;
+        width: auto;
+      } .skills-div{
+         margin-top:1em;
+         grid-template-columns:auto auto auto ;
+         flex-wrap: wrap;
+         .habilidade{
+            .image-skills-item{
+               height:50px;
+            }
+         }
+      }
+      }
+    }
+    .experiencia {
+      .h1{font-size:3em;}
+  
+      
+       z-index: 0;
+      .yoda-baby {
+        height: 300px;
+
+        position: absolute;
+        z-index: -1;
+        margin: 0em;
+        opacity: 0.3;
+      }
+    }
+    .robot-img,
+    .image-skills,
+    .yoda-baby {
+      position: absolute;
+      z-index: -1;
+      margin: 0em;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width:820px) and (max-width: 1070px){
+.about-div{
+
+
+  .skills {
+   
+    main {
+      position:relative;
+      z-index:0;
+      .image-skills {
+        height: 500px;
+        width: auto;
+        position:absolute;
+        right:10%;
+        top:10%;
+        z-index:-1;
+        opacity:0.3;
+      }
+      
+    }
+  }
+  .experiencia {
+    
+    position:relative;
+      z-index:0;
+    .yoda-baby {
+      height: 400px;
+      position:absolute;
+      right:10%;
+      top:30%;
+      z-index:-1;
+      opacity:0.3;
+    }
+  }
+  .cursos {
+    
+    .cursos-div {
+      position:relative;
+      z-index:0;
+      .robot-img {
+        height: 300px;
+        width: auto;
+        position:absolute;
+        right:20%;
+        top:10%;
+        z-index:-1;
+        opacity:0.5;
+      }
+    }
+  }
+}
+}
+
+@media (min-width: 2500px) {
+  .about-div {
+    .about-home {
+      width: 50%;
+    }
+    .Information {
+      .WorkOrCourseDiv {
+        width: 60%;
+        .professionOrCourse {
+          font-size: 2em;
+        }
+        .dateOf {
+          font-size: 2em;
+        }
+      }
+    }
+    .experiencia {
+      .yoda-baby {
+        height: 1000px;
+        width: auto;
+      }
+    }
+    .skills {
+      .image-skills {
+        height: 900px;
+        width: auto;
+      }
+    }
+  }
+}

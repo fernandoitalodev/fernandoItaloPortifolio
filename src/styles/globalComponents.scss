@@ -1,0 +1,22 @@
+.btn{
+    border:none;
+    background-color:white;
+    color:black;
+    padding: 0.5em 1em;
+    box-shadow: none;
+    border-radius: 10px;
+   margin-left: 0.3em;
+   border:1px solid white;
+   
+}.btn:hover{
+    color:white;
+    background-color:rgba(0, 0, 0, 0.596);
+    border:1px solid white;
+    
+   }
+
+   
+   .header-links:hover{
+    content: '';
+    border-bottom: 2px solid rgb(0, 255, 255);
+   }
