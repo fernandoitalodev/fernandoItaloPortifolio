@@ -60,10 +60,13 @@
           position:relative;
           span{
             position:absolute;
-            bottom: -10px;
+            bottom: -17px;
              color:red;
+             background-color:white;
              font-size:0.8em;
-             right:40%;
+             right:10%;
+             padding:0.1em;
+             border-radius:10px;
              white-space: nowrap;
           }
         }

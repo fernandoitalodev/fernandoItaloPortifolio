@@ -34,20 +34,20 @@ const cursos = [
     " Programador FullStack Javascript ",
     "@one Bit Code",
     "2022 | 2023 ",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ex dolorem recusandae molestias necessitatibus fuga quaerat. Sit maiores quae minus numquam deserunt rem hic soluta quo fuga ex, ad vel?",
+    " treinamento abrangente que ensina a criação de aplicativos web do início ao fim, abrangendo tanto o desenvolvimento do lado do cliente quanto do servidor. ",
     "/onebit-logo.png"
   ],
   [
     " Programação Javascript Basico",
     "@Curso em video",
     "2022 ",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ex dolorem recusandae molestias necessitatibus fuga quaerat. Sit maiores quae minus numquam deserunt rem hic soluta quo fuga ex, ad vel?",
+    "Curso que ensina os  fundamentos da linguagem de programação JavaScript. aprendi os conceitos essenciais, como variáveis, condicionais, loops e funções, e como aplicá-los na criação de interações dinâmicas em sites e aplicativos web.",
     "/curso-logo.jpg"
   ],[
     " CS50",
     "@Harvard University",
     "2023 | cursando",
-    "Curso de introdução a ciencia da computação",
+    "O curso CS50 de Harvard é um renomado programa de ensino de ciência da computação que abrange os fundamentos da programação, algoritmos e estruturas de dados.",
     "/harvard-logo2.png"
   ]
 ];

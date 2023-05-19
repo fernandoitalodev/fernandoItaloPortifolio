@@ -65,8 +65,8 @@ const Contacts = () => {
           <div className="send-me-a-email">
             <h2 className="h2">Me envie um Email</h2>
 
-            <form onSubmit={handleSubmit(onSubmitFunction)}>
-              <div>
+            <form onSubmit={handleSubmit(onSubmitFunction)} className=" flex  gap-4" >
+              <div  >
                 <div className="flex flex-col">
                    
                 <input className={`${errors.name ? "border-solid border-2 border-red-700 focus:outline-none ":""}`}  {...register("name", { required: true })} placeholder=" * nome" />
@@ -74,7 +74,7 @@ const Contacts = () => {
                 </div>
                 <div className="input-div" >
                   <input className={`${errors.email ? "border-solid border-2 border-red-700 focus:outline-none ":""}`}  {...register("email" ,{ required: true })} placeholder=" * email" />
-                {errors.email && <span>Insira um email válido.</span>}
+                {errors.email && <span >Insira um email válido.</span>}
                 </div>
                 
               </div>
@@ -92,7 +92,7 @@ const Contacts = () => {
               <button className="btn" type="submit">
                 Enviar
               </button>
-              {errors && <span className="aviso-span">Items com "*"são obrigatórios</span>}
+              
             </form>
           </div>
         </div>
