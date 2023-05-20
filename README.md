@@ -10,3 +10,5 @@
 -Os icones são do font awesome e os  SVG são svgRepo ;  
 
 
+-Design inspirado no site: https://minimal-nextjs-portfolio-website.vercel.app/
+
