@@ -1,18 +1,10 @@
 import '@/styles/globals.css'
-import "../styles/main.scss"
-import "../styles/Header.scss"
-import "../styles/app.scss"
-import "../styles/about.scss"
-import "../styles/projects.scss"
-import "../styles/contact.scss"
-import "../styles/Services.scss"
-import "../styles/globalComponents.scss"
-import Header from './Header'
+
 
 export default function App({ Component, pageProps }) {
   return (
-  <div className="App">
-    <Header/>
+  <div className="App bg-[url('/cool-background.png')] lg:bg-[url('/fake-img.jpg')]  bg-[#151019] text-white box-border">
+    
   <Component {...pageProps} />
    
   </div>)

@@ -20,9 +20,12 @@ const Header = () => {
   },[router])
 
   return (
-    <header className={`top-header ${menu ? "show ":"hide"}`}>
-  <h1 onClick={()=> setMenu(!menu)} className={'h1Header' }><FontAwesomeIcon icon={menu ? faXmark:faBars}/></h1>
-  <nav>
+    <header className={`flex-col ${menu ? "bg-zinc-800 h-full ":"h-auto bg-transparent  z-0"}
+    flex w-[50%] absolute  right-0 items-center justify-between text-white z-30`}>
+
+  <h1 onClick={()=> setMenu(!menu)} className="self-end p-3 text-2xl"><FontAwesomeIcon icon={menu ? faXmark:faBars}/></h1>
+
+  <nav className={`flex flex-col gap-3 ${menu ? "block ":"hidden"}`}>
 {
   allPages.map((el)=>{
     if(router.pathname == el[0]){
@@ -41,7 +44,9 @@ const Header = () => {
 
 
   </nav>
-
+<div className={`  ${menu ? "block ":"hidden"}`}>
+  social medias
+</div>
   {/* <p className="p-header"> E eu sou  <ReactTypingEffect text={["Programador","Freelancer","Criativo"]}/></p> */}
     </header>
   )

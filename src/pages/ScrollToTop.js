@@ -34,7 +34,7 @@ const checkScroll= () => {
     }
 
   return (
-  <div  onClick={()=>scrolltoTopFunction()} className={` animate-bounce  arrowToTop toTopBtn ${showbuttom ? "":"hideButtom"}`} > <FontAwesomeIcon icon={faCircleArrowUp} />
+  <div  onClick={()=>scrolltoTopFunction()} className={` fixed right-2 bottom-2 animate-bounce  arrowToTop toTopBtn ${showbuttom ? "":"hidden"}`} > <FontAwesomeIcon icon={faCircleArrowUp} className="h-8"/>
     
     </div>
     )

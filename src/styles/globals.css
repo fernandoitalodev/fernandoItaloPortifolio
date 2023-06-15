@@ -2,3 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .h1 {
+      @apply text-4xl indent-3 font-bold;
+    }
+    .input-style{
+      @apply rounded-lg p-2;
+    }
+  }

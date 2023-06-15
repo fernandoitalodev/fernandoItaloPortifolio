@@ -1,4 +1,4 @@
-import Faq from "@/components/Faq";
+// import Faq from "@/components/Faq";
 import NextPage from "@/components/NextPage";
 import Image from "next/image";
 
@@ -29,8 +29,8 @@ const Services = () => {
           })
         }
       </div>
-    <Faq/>
-    <NextPage pagina="/Contact" nomeDaPagina="Contatos"/>
+    {/* <Faq/> */}
+    
     </div>
   );
 };
