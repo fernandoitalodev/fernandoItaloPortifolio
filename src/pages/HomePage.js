@@ -28,7 +28,7 @@ Olá, meu nome é
           className={`opacity-20 hover:opacity-30 lg:h-[500px] lg:w-auto`}
           height={300}
           width={300}
-          src={"/vangog.png"}
+          src={"/bg/vangog.png"}
         />
       </div>
     </main>
