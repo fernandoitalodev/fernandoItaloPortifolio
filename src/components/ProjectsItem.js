@@ -28,6 +28,7 @@ const ProjectsItem = ({ item, selectedId, setSelectedId }) => {
               src={selectedId.img ? selectedId.img : ""}
               width={450}
               height={500}
+              alt={selectedId.title +"image"}
             />
            <h4 className="text-2xl font-bold text-center m-2 md:text-3xl"> {selectedId.title} </h4>
 

@@ -130,19 +130,14 @@ const About = () => {
                     width={70}
                     height={100}
                     src={img}
+                    alt={el.title+"image"}
+                    loading="lazy"
                   />
                     })
                   }
                   </div>
 <h2 className="text-3xl mt-2 font-bold text-center">{el.title}</h2>
-                  
-                  {/* <ul class="list-disc text-left m-2">
-                    {el.description.map((el,i)=>{
-                     return <li key={i+"li"} > {el} </li>
-                    })}
-  
- 
-</ul> */}
+                 
                 </motion.div>
               );
             })}
