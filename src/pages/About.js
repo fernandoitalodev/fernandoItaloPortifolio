@@ -87,6 +87,7 @@ const About = () => {
               width={200}
               height={200}
               src="/about-images/me.jpg"
+              alt="fernando italo imagem"
             />
           </div>
         

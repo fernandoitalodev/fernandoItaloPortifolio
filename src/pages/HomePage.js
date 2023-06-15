@@ -26,7 +26,7 @@ Olá, meu nome é
       <div className="absolute -top-16 z-0">
         <Image
         loading="lazy"
-          className={`opacity-20 hover:opacity-30 lg:h-[500px] lg:w-auto`}
+          className={`opacity-20  lg:h-[500px] lg:w-auto`}
           height={300}
           width={300}
           src={"/bg/vangog.png"}
