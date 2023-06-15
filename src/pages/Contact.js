@@ -52,7 +52,7 @@ const Contacts = () => {
       <h1 className="h1 text-center">Contatos</h1>
 
       <div className="m-2 flex-col flex  items-center">
-        <div className="flex justify-between m-2 p-2 md:w-6/12">
+        <div className="gap-4 flex justify-between m-2 p-2 md:w-6/12">
           {formasDeContato.map((el) => {
             return (
               
